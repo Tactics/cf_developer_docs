@@ -6,7 +6,7 @@ For our dev docs, we use Slate.  The repo you are reading is a fork the original
 We have changed:
 * **this README.md file** — to include a few instructions.
 * **source/index.html.md** — where the docs go
-* **resources** — not yet, add when needed
+* **source/layouts/layout.erb** — favicon, titles, ...
 
 ### Quickstart
 
