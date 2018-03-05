@@ -7,6 +7,6 @@ token, or allowed for it be created.
 
 A token can be acquired in two ways, depending on your use case:
 
-* **Personal access token** — It's possible to create a token manually using the web application.
-* **Open Connect Id** — This allows users to grant your application access to our API using an online flow integrated into your web application.
+* [**Personal access token**](#personal-access-token) — It's possible to create a token manually using the web application.
+* [**Open Connect Id**](#openid-connect) — This allows users to grant your application access to our API using an online flow integrated into your web application.
 

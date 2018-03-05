@@ -27,7 +27,7 @@ Where REST has several endpoints, graphQL has just one:
 We generate documentation from our GraphQL schema. 
 All calls are validated and executed against the schema. 
 
-Use these docs to find out what data you can call.
+Use these docs to find out what operations (mutations in GraphQL lingo) you can execute and which data you can query.
 
 [https://master.acc.clearfacts.be/doc/publicSchema/index.html](https://master.acc.clearfacts.be/doc/publicSchema/index.html)
 
@@ -38,12 +38,17 @@ Use these docs to find out what data you can call.
 
 ### Types
 
-* scalars, enums, interfaces, objects unions, and input objects.
-
+* scalars
+* enums
+* interfaces
+* objects unions
+* input objects.
 
 ## Examples
 
-### Query
+In this section we provide you with a few examples to get you started.
+
+### Query the list of accessible administrations
 
 ```graphql
 query admins {
@@ -66,3 +71,11 @@ query admins {
   }
 }
 ```
+> will result in 
+
+```json
+
+```
+
+
+### Upload a sales invoice
