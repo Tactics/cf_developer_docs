@@ -2,43 +2,49 @@
  
 You can use scopes to:
 
- * Let a client application authenticate users and get additional information about them, 
- such as their email or picture  (Type in the table below: OpenID)
+ * Authenticate users and get additional information about them such as their email or name (Type in the table below: OpenID)
 
- * Implement granular access control to your API. In this case, you need to define 
- custom scopes for your API and add these newly-created scopes to your scope 
- request parameter: scope=read:contacts. (Type: API)
+ * Request granular access control to the API. (Type: API)
 
 ### Scopes
 
 This is a list of all the supported scopes: 
 
-Scope                | Type | Description
----------------------|--------------------------------
-openid               | OpenID | Technical scope, should always be requested when using the OpenID Connect flow, it allows access to the username
-email                | OpenID | Access to a users emailaddress (via the ``/userinfo`` endpoint 
-profile              | OpenID | Access to a users name, locale
-read_administrations | API    | Allows the client to query the list of administrations the user has access to
-upload_document      | API    | Allows the client to query the list of administrations the user has access to
+Scope                | Type   | Description
+---------------------|--------|------------------------
+`openid`               | OpenID | Technical scope, should always be requested when using the OpenID Connect flow, it allows access to the username
+`email`                | OpenID | Access to a users emailaddress (via the ``/userinfo`` endpoint 
+`profile`              | OpenID | Access to a users name, locale
+`read_administrations` | API    | Allows the client to query the list of administrations the user has access to
+`upload_document`      | API    | Allows the client to query the list of administrations the user has access to
 
 
 ### Claims
+OpenID Connect specifies a set of standard claims. 
+These claims are user attributes and are intended to provide the client with user details such as 
+email, name and locale.
+
+The basic claim returned for the `openid` scope is the `sub` claim, which uniquely identifies the user 
+(`iss`, `aud`, `exp`, `iat` and `at_hash` claims will also be present in the id_token). 
+
 Requesting individual claims is not supported in our OIDC implementation.
 Access to claims is regulated through scopes.
+Applications can ask for additional scopes, separated by spaces, 
+to request more information about the user.
 
 The `/userinfo` endpoint will return a json object with a few "OpenID Claims", depending on the scopes that have been granted to your token.
 
 
 Claim        | Type       | Required scope | Description
 ------------ | ---------- | -------------- | ----------------------------------------- 
-username	 | string     | openid         | The username as used in ClearFacts. 
-sub          | string     | openid         | Subject-identifier for the user in the ClearFacts.  It contains the same value as the 'sub' claim.
-name	     | string     | profile        | User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the user's locale and preferences.
-given_name   | string	  | profile        | Given name(s) or first name(s) of the user. 
-family_name  | string     | profile        | Surname(s) or last name(s) of the user.
-preferred_username | string | profile      | Shorthand name by which the user wishes to be referred to. 
-email	     | string     | email          | The user's e-mail address. *Note*: in most cases the username equals the email address. 
-locale       | string     | profile        | The user's locale, represented as a BCP47 [RFC5646] language tag. This is typically an ISO 639-1 Alpha-2 [ISO639‑1] language code in lowercase and an ISO 3166-1 Alpha-2 [ISO3166‑1] country code in uppercase, separated by a dash. For example, nl-BE.
+`username`	 | string     | openid         | The username as used in ClearFacts. 
+`sub`          | string     | openid         | Subject-identifier for the user in the ClearFacts.  It contains the same value as the 'sub' claim.
+`name`	     | string     | profile        | User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the user's locale and preferences.
+`given_name`   | string	  | profile        | Given name(s) or first name(s) of the user. 
+`family_name`  | string     | profile        | Surname(s) or last name(s) of the user.
+`preferred_username` | string | profile      | Shorthand name by which the user wishes to be referred to. 
+`email`	     | string     | email          | The user's e-mail address. *Note*: in most cases the username equals the email address. 
+`locale`       | string     | profile        | The user's locale, represented as a BCP47 [RFC5646] language tag. This is typically an ISO 639-1 Alpha-2 [ISO639‑1] language code in lowercase and an ISO 3166-1 Alpha-2 [ISO3166‑1] country code in uppercase, separated by a dash. For example, nl-BE.
 
 
 ### Granting and revoking scopes
