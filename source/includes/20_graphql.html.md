@@ -22,5 +22,47 @@ Where REST has several endpoints, graphQL has just one:
 
 `https://api.clearfacts.be/graphql`
 
-## Example query
+## The schema
 
+We generate documentation from our GraphQL schema. 
+All calls are validated and executed against the schema. 
+
+Use these docs to find out what data you can call.
+
+[https://master.acc.clearfacts.be/doc/publicSchema/index.html](https://master.acc.clearfacts.be/doc/publicSchema/index.html)
+
+### Allowed operations
+
+* [Queries](https://master.acc.clearfacts.be/doc/publicSchema/query.doc.html)
+* [Mutations](https://master.acc.clearfacts.be/doc/publicSchema/mutation.doc.html)
+
+### Types
+
+* scalars, enums, interfaces, objects unions, and input objects.
+
+
+## Examples
+
+### Query
+
+```graphql
+query admins {
+  administrations {
+    name, 
+    companyNumber, 
+    emails {
+      type,
+      emailAddress
+    }
+    companyType,
+    address {
+      streetAddress, 
+      country {
+        iso2,
+        name
+      }
+    },
+    accountManager
+  }
+}
+```

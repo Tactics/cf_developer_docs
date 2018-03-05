@@ -20,8 +20,6 @@ Currently this is a manual process, so please contact us via email or phone to s
 You will need to supply us with your OIDC redirect URI and receive a client identifier and secret after you registration has been completed.
 
 ### (Auto)configuration
-The base URL is :  xxxxx
-
 > To get the OpenID Connect configuration:
 
 ```shell
@@ -53,48 +51,6 @@ The token that you'll receive using OIDC is not a random byte string, but a sign
 The JWT token contains the basic claims (sub, username, email) as well as the actual 80 character access token like you would get when creating a personal access token.
 
 Both the longer JWT token as the 80 character token can be used in the `Authentication: Bearer <token>` header.  
-This means you can store either one.
-
-
-## Scopes and claims
-
-### Scopes
-
-This is a list of all the supported scopes: 
-
-Scope                | Description
----------------------|--------------------------------
-openid               | Technical scope, should always be requested to identify an OIDC request, it allows access to the username
-email                | Access to a users emailaddress (via the ``/userinfo`` endpoint 
-profile              | Access to a users name, locale
-administrations      | ...
-
-
-### Claims
-Requesting individual claims is not supported in our OIDC implementation.
-Access to claims is regulated through scopes.
-
-The `/userinfo` endpoint will return a json object with a few "OpenID Claims", depending on the scopes that have been granted to your token.
-
-
-Claim        | Type       | Required scope | Description
------------- | ---------- | -------------- | ----------------------------------------- 
-username	 | string     | openid         | The username as used in ClearFacts. 
-sub          | string     | openid         | Subject-identifier for the user in the ClearFacts.  It contains the same value as the 'sub' claim.
-name	     | string     | profile        | User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the user's locale and preferences.
-given_name   | string	  | profile        | Given name(s) or first name(s) of the user. 
-family_name  | string     | profile        | Surname(s) or last name(s) of the user.
-preferred_username | string | profile      | Shorthand name by which the user wishes to be referred to. 
-email	     | string     | email          | The user's e-mail address. *Note*: in most cases the username equals the email address. 
-locale       | string     | profile        | The user's locale, represented as a BCP47 [RFC5646] language tag. This is typically an ISO 639-1 Alpha-2 [ISO639‑1] language code in lowercase and an ISO 3166-1 Alpha-2 [ISO3166‑1] country code in uppercase, separated by a dash. For example, nl-BE.
-
-### Granting and revoking scopes
-
-*Personal Access Token*
-In case of an personal access token, the user can select which scopes to grant.
-It's possible to grant or revoke scopes later on by editing the personal access token in the application.
-
-*OIDC Token*
-It's not possibe to change the scopes for an existing token.  If a user wants to revoke rights he needs to remove the application.
+This means you can store either one for subsequent use.
 
 

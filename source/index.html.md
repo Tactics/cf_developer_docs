@@ -14,9 +14,8 @@ includes:
   - 10_authentication.html.md
   - 11_authentication_personal_access_token.html.md
   - 12_authentication_oidc.html.md
+  - 13_authentication_scopes.html.md
   - 20_graphql.html.md
-  - kittn-api-example.html.md
-  - errors
 
 search: true
 ---

@@ -16,15 +16,14 @@ In this documentation you'll find information on how to authenticate and connect
 * For connecting to the API you need a token.  Tokens can be created manually, or through OpenID Connect.
 
 ### Getting help
-If you have any questions regarding our api please contact developer support via email at dev-support at clearfacts dot be.
+If you have any questions regarding our api please contact our developer support via email at *dev-support at clearfacts dot be*.
 
 ### Using this documentation
-
 You can view code examples in the area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 ### Shortcuts
 
-The following quick links will help you get you started:
+The quick links below might help you get you started:
 
 * [Authentication](#authentication)
 * [The root endpoint](#the-graphQL-endpoint)
