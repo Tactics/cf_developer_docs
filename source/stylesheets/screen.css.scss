@@ -59,7 +59,7 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
 
   // language selector for mobile devices
@@ -171,7 +171,7 @@ html, body {
 
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .toc-footer {
@@ -319,6 +319,7 @@ html, body {
   // to place content above the dark box
   position: relative;
   z-index: 30;
+  line-height: 1.8em;
 
   &:after {
     content: '';
@@ -363,7 +364,7 @@ html, body {
 
   h2 {
     @extend %header-font;
-    font-size: 19px;
+    font-size: 20px;
     margin-top: 4em;
     margin-bottom: 0;
     border-top: 1px solid #ccc;
@@ -381,13 +382,13 @@ html, body {
 
   h3, h4, h5, h6 {
     @extend %header-font;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 2.5em;
     margin-bottom: 0.8em;
   }
 
   h4, h5, h6 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   hr {
@@ -440,7 +441,7 @@ html, body {
   }
 
   p, li, dt, dd {
-    line-height: 1.6;
+    line-height: 1.8;
     margin-top: 0;
   }
 
@@ -467,7 +468,7 @@ html, body {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     background: $aside-notice-bg;
-    line-height: 1.6;
+    line-height: 1.8;
 
     margin-left: 3%;
     margin-right: 53%;
@@ -484,7 +485,7 @@ html, body {
   aside:before {
     vertical-align: middle;
     padding-right: 0.5em;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   aside.notice:before {
