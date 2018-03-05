@@ -469,6 +469,9 @@ html, body {
     background: $aside-notice-bg;
     line-height: 1.6;
 
+    margin-left: 3%;
+    margin-right: 53%;
+
     &.warning {
       background-color: $aside-warning-bg;
     }

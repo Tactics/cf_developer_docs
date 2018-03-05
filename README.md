@@ -5,7 +5,8 @@ For our dev docs, we use Slate.  The repo you are reading is a fork the original
 
 We have changed:
 * **this README.md file** — to include a few instructions.
-* **source/index.html.md** — where the docs go
+* **source/index.html.md** — contains main config and includes per topic
+* **source/includes/** — a Markdown file per topic as well as the original demo (`kittn-api-example.html.md`)
 * **source/layouts/layout.erb** — favicon, titles, ...
 
 ### Quickstart
