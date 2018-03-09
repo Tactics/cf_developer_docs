@@ -37,11 +37,11 @@ if you'd like to see which features are supported in our implementation.
  
 ```json
 {
-	"issuer": "https://acc.clearfacts.be",
-	"authorization_endpoint": "https://acc.clearfacts.be/oauth2-server/authorize",
-	"token_endpoint": "https://acc.clearfacts.be/oauth2-server/token",
-	"userinfo_endpoint": "https://acc.clearfacts.be/oauth2-server/userinfo",
-	"jwks_uri": "https://acc.clearfacts.be/oauth2-server/jwks.json",
+	"issuer": "https://login.clearfacts.be",
+	"authorization_endpoint": "https://login.clearfacts.be/oauth2-server/authorize",
+	"token_endpoint": "https://login.clearfacts.be/oauth2-server/token",
+	"userinfo_endpoint": "https://login.clearfacts.be/oauth2-server/userinfo",
+	"jwks_uri": "https://login.clearfacts.be/oauth2-server/jwks.json",
 	"response_types_supported": ["code", "token"],
 	"subject_types_supported": ["public"],
 	"id_token_signing_alg_values_supported": ["RS256"],
@@ -49,7 +49,7 @@ if you'd like to see which features are supported in our implementation.
 }
 ```
 
-[https://acc.clearfacts.be/.well-known/openid-configuration](https://acc.clearfacts.be/.well-known/openid-configuration)
+[https://login.clearfacts.be/.well-known/openid-configuration](https://login.clearfacts.be/.well-known/openid-configuration)
 
 
 ### Authorisation code flow
@@ -70,7 +70,9 @@ The Authorization Code Flow goes through the following steps:
 7. Client receives a response that contains an ID Token and Access Token in the response body.
 8. Client validates the ID token and retrieves the End-User's Subject Identifier.
 
-It is beyond the scope of this document to get into more detail.
+It is beyond the scope of this document to get into more detail, but you can easily test this flow on [openidconnect.net](https://openidconnect.net/).
+
+
 
 ### OIDC Token
 

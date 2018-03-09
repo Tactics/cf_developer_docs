@@ -26,12 +26,12 @@ We generate documentation from our GraphQL schema. All calls are validated and e
 Use these docs to find out what operations (mutations in GraphQL lingo) you can execute and which data you can query.
 
 This is the link to our schema documentation:
-[https://master.acc.clearfacts.be/doc/publicSchema/index.html](https://master.acc.clearfacts.be/doc/publicSchema/index.html)
+[https://api.clearfacts.be/doc/publicSchema/index.html](https://api.clearfacts.be/doc/publicSchema/index.html)
 
 ### Allowed operations
 
-* [Queries](https://master.acc.clearfacts.be/doc/publicSchema/query.doc.html)
-* [Mutations](https://master.acc.clearfacts.be/doc/publicSchema/mutation.doc.html)
+* [Queries](https://api.clearfacts.be/doc/publicSchema/query.doc.html)
+* [Mutations](https://api.clearfacts.be/doc/publicSchema/mutation.doc.html)
 
 ### Types
 
