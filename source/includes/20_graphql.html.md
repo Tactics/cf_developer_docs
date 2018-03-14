@@ -8,7 +8,7 @@ It was published in 2015 and has since been adopted by major tech products like 
 
 GraphQL provides an alternative to REST and allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server.  It is a strongly typed runtime which allows clients to dictate what data is needed. This avoids both the problems of over-fetching as well as under-fetching of data.
 
-More information on GraphQL can be found here (amongst plenty of others): 
+More information on GraphQL can be found here (amongs plenty of others): 
 
 * [http://graphql.org/](http://graphql.org/)
 * [https://www.howtographql.com/](https://www.howtographql.com/)
@@ -112,7 +112,7 @@ query admins {
 This first example queries all the administrations a user has access to. 
 
 For each administration we'll fetch basic information as name, company number and address, but also the 
-accountmanager of that administration at the accountants office.  Finally we'll add the emailaddresses that can
+account manager of that administration at the accountants office.  Finally we'll add the email addresses that can
 be used to send documents too.  
 
 The result is a JSON structure with an array of all the administrations and its requested properties.

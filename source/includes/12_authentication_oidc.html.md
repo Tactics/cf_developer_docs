@@ -22,7 +22,7 @@ In order to use OpenID Connect, your app needs to be registered with ClearFacts.
 Currently this is a manual process, so please contact us via email or phone to set things up.
 
 You will need to supply us with your OIDC redirect URI and receive a client identifier and 
-secret after you registration has been completed.
+secret after your registration has been completed.
 
 ### Auto Discovery
 > To get the OpenID Connect configuration:

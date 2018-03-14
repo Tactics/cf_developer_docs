@@ -22,7 +22,7 @@ If you have any questions regarding our api please contact our developer support
 You can view code examples in the area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 ### Shortcuts
-The quick links below might help you get you started:
+The quick links below might help you get started:
 
 * [Authentication](#authentication)
 * [The root endpoint](#the-graphQL-endpoint)

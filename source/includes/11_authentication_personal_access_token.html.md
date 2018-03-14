@@ -8,7 +8,7 @@ This means it's any easy way to get a token for talking to the API using command
     Functionality for SME users to create these tokens will be added when a valid use case is presented. 
 </aside>
 
-Personal access tokens are always exactly 80 ASCII charachters (or bytes) long.
+Personal access tokens are always exactly 80 ASCII characters (or bytes) long.
 
 ### Creating an personal access token
 
@@ -20,7 +20,7 @@ To create a personal access token, you need to follow these steps:
 4. Give your token a descriptive name.
 5. Select the scopes you'd like to grant your token.
 6. Click the "save" button.
-7. The newly created token is displayed on a message box.  Make sure to copy it, as it is only displayed once.
+7. The newly created token is displayed in a message box.  Make sure to copy it, as it is only displayed once.
 
 <aside class="warning">
 Tokens are like passwords, make sure to treat them in the same way and keep them safe.

@@ -17,7 +17,7 @@ This is a list of all the supported scopes in our API:
 
 Scope                | Type   | Description
 ---------------------|--------|------------------------
-`openid`               | OpenID | This is a technical scope, it should always be requested when using the OpenID Connect flow, it also allows access to a unique identifaction of the user (the `sub` claim)
+`openid`               | OpenID | This is a technical scope, it should always be requested when using the OpenID Connect flow, it also allows access to a unique identification of the user (the `sub` claim)
 `email`                | OpenID | Access to a users emailaddress (via the ``/userinfo`` endpoint 
 `profile`              | OpenID | Access to a users name, locale
 `read_administrations` | API    | Allows the client to query the list of administrations the user has access to
@@ -59,7 +59,7 @@ Although claims are a part of the OpenID Connect specification, it's still possi
 ### Granting and revoking scopes
 
 *Personal Access Token*
-In case of an personal access token, the user can select which scopes to grant.
+In case of a personal access token, the user can select which scopes to grant.
 It's possible to grant or revoke scopes later on by editing or deleting the personal access token in the application.
 
 *OpenID Connect Token*
