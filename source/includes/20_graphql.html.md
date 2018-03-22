@@ -170,8 +170,8 @@ query categories {
 }
 ```
 
-In this example we will query a list of specific elements for a company.
-To indicate which company, we'll pass the VAT number as an argument to our query, after which we'll ask for both types of categories, 
+In this example we will query a list of specific elements for a administration.
+To indicate which administration, we'll pass the VAT number as an argument to our query, after which we'll ask for both types of categories, 
 with their respective members. Each member will provide us with an ID that we can use in other queries, as well as a name.
 
 After we start typing a query, an argument can be used after specifying what object we want to query.
@@ -184,15 +184,27 @@ If you'd like to test the example above, you can use this link to the GraphQL Pl
 
 ### Upload a sales invoice
 
-
-
 ```graphql
-mutation UploadFile($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
+mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
  uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
-   uuid 
+   id,
+   amountOfPages
  } 
 }
 ```
 ```json
-{"variables": { "vatnumber": "0809003556", "filename": "test_API_upload", "invoicetype": "SALE"}}
+{"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}
 ``` 
+
+In this example we will call a mutation with the goal of uploading a file for a specific administration.
+Just like our previous example, we will provide arguments to determine the administration, as well as the name and the type of the file.
+The uploaded file will in turn provide us with an ID, the filename and the detected amount of pages.
+
+The way in which we send this mutation differs a bit from regular queries. Since we have to provide a file as data, we 
+will send our information as form-data instead of a text-based content-type like application/json or application/graphql.
+
+The file must be present as a parameter named "file", while the mutation and arguments can be provided as regular text-based 
+content in the form, respectively called "query" and "variables".
+
+Unfortunately due to the nature of the GraphQL Playground, we can not provide you with an example, as they do not 
+allow or provide an option for a user to enter form-data or upload files. 
