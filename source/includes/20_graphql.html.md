@@ -123,7 +123,7 @@ If you'd like to test the example above, you can use this link to the GraphQL Pl
 
 (Don't forget to replace the `<token>` with your own token in the HTTP headers)
 
-### Query the list of available categories for a company (using arguments)
+### Query the list of available categories for a company using arguments
 
 ```graphql
 query categories {
@@ -170,7 +170,7 @@ query categories {
 }
 ```
 
-In this example we will query a list of specific elements for a administration.
+In this example we will query a list of specific elements for an administration.
 To indicate which administration, we'll pass the VAT number as an argument to our query, after which we'll ask for both types of categories, 
 with their respective members. Each member will provide us with an ID that we can use in other queries, as well as a name.
 
@@ -182,7 +182,7 @@ The result is a JSON structure with an array of all the categories and their req
 If you'd like to test the example above, you can use this link to the GraphQL Playground: 
 [https://graphqlbin.com](https://graphqlbin.com)
 
-### Upload a sales invoice
+### Upload a sales invoice through a mutation
 
 ```graphql
 mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
