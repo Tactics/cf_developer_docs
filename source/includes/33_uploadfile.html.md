@@ -8,6 +8,9 @@ mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTy
  } 
 }
 ```
+
+> will result in:
+
 ```json
 {"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}
 ``` 
