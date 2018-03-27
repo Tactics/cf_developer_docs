@@ -16,6 +16,10 @@ includes:
   - 12_authentication_oidc.html.md
   - 13_authentication_scopes.html.md
   - 20_graphql.html.md
+  - 30_recipes.html.md
+  - 31_administrations.html.md
+  - 32_categories.html.md
+  - 33_uploadfile.html.md
 
 search: true
 ---
