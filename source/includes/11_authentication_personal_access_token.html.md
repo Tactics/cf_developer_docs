@@ -1,7 +1,7 @@
 ## Personal Access Token
 A personal access token is created manually and is typically used by offline or desktop applications.
 
-This means it's any easy way to get a token for talking to the API using command line tools, eg while exploring the API's capabilities.
+This means it's an easy way to get a token for talking to the API using command line tools, eg while exploring the API's capabilities.
 
 <aside class="notice">
     Currently only accountant users can create personal access tokens.<br/>
