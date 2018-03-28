@@ -37,10 +37,10 @@ curl -X POST \
   -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
   -F 'query=mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
              uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
-               id,
+               uuid,
                amountOfPages
              } 
             }' \
-  -F 'variables={"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}' \
+  -F 'variables= { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}' \
   -F file=@/home/user/Documents/example.pdf
 ```
