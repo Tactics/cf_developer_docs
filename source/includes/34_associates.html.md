@@ -14,20 +14,20 @@ query {
 
 ```json
 {
-  "data": {
-      "associateGroups": [
-          {
-              "id": "16d5379f-30cb-11e8-987b-000c2985a2fd",
-              "name": "Group 1",
-              "email": "group1@clearfacts.be"
-          },
-          {
-              "id": "16d53ea9-30cb-11e8-987b-000c2985a2fd",
-              "name": "Group 2",
-              "email": "group2@clearfacts.be"
-          }
-      ]
-  }
+    "data": {
+        "associateGroups": [
+            {
+                "id": "16d5379f-30cb-11e8-987b-000c2985a2fd",
+                "name": "Group 1",
+                "email": "group1@clearfacts.be"
+            },
+            {
+                "id": "16d53ea9-30cb-11e8-987b-000c2985a2fd",
+                "name": "Group 2",
+                "email": "group2@clearfacts.be"
+            }
+        ]
+    }
 }
 ```
 
@@ -55,18 +55,20 @@ mutation add($associate: AddAssociateArgument!) {
 ```
 ```json
 {
-  "variables" : {
     "associate": {
-      "firstName": "Test",
-      "lastName": "Client",
-      "email": "test@clearfacts.be",
-      "type": "ADMIN",
-      "associateGroups": [{"id": "16d5379f-30cb-11e8-987b-000c2985a2fd"}],
-      "active": true,
-      "language": "nl_BE",
-      "sendActivationMail": false
+        "firstName": "Test",
+        "lastName": "Client",
+        "email": "test@clearfacts.be",
+        "type": "ADMIN",
+        "associateGroups": [
+            {
+                "id": "16d5379f-30cb-11e8-987b-000c2985a2fd"
+            }
+        ],
+        "active": true,
+        "language": "nl_BE",
+        "sendActivationMail": false
     }
-  }
 }
 ```
 
@@ -74,22 +76,22 @@ mutation add($associate: AddAssociateArgument!) {
 
 ```json
 {
-  "data": {
-    "addAssociate": {
-      "id": "198772ef-d095-4859-9328-dc47950853b9",
-      "firstName": "Test",
-      "lastName": "Client",
-      "email": "test@clearfacts.be",
-      "associateGroups": [
-        {
-          "id": "16d5379f-30cb-11e8-987b-000c2985a2fd",
-          "name": "Group 1",
-          "email": "group1@clearfacts.be"
+    "data": {
+        "addAssociate": {
+            "id": "198772ef-d095-4859-9328-dc47950853b9",
+            "firstName": "Test",
+            "lastName": "Client",
+            "email": "test@clearfacts.be",
+            "associateGroups": [
+                {
+                  "id": "16d5379f-30cb-11e8-987b-000c2985a2fd",
+                  "name": "Group 1",
+                  "email": "group1@clearfacts.be"
+                }
+            ],
+            "plainPassword": "FaKePaSsWord"
         }
-      ],
-      "plainPassword": "FaKePaSsWord"
     }
-  }
 }
 ```
 
