@@ -1,5 +1,6 @@
-### Upload a sales invoice through a mutation
+## Upload a sales invoice through a mutation
 
+> query
 ```graphql
 mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
  uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
@@ -9,8 +10,7 @@ mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTy
 }
 ```
 
-> will result in:
-
+> variables
 ```json
 {"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}
 ``` 
@@ -30,6 +30,7 @@ allow or provide an option for a user to enter form-data or upload files.
 
 Instead we provide you with a cURL example.
 
+> cURL request
 ```curl
 curl -X POST \
   http://api.clearfacts.be/graphql \

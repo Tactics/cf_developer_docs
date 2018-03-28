@@ -1,4 +1,4 @@
-### Query the list of accessible administrations
+## Query the list of accessible administrations
 
 ```graphql
 query admins {

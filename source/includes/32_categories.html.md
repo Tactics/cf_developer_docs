@@ -1,4 +1,4 @@
-### Query the list of available categories for a company using arguments
+## Query the list of available categories for a company using arguments
 
 ```graphql
 query categories {
