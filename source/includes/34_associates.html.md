@@ -31,11 +31,11 @@ query {
 }
 ```
 
-In this example we will create an associate and assign them to an associate group. 
+In this example we create an associate and assign them to an associate group. 
 The first step of the process is to look for which associate groups are available,
 and use one of their IDs to link the associate.
 
-Here we will use the first group returned.
+Here we use the first group returned.
 
 ```graphql
 mutation add($associate: AddAssociateArgument!) {
