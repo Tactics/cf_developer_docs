@@ -49,10 +49,7 @@ In this example we will query a list of specific elements for an administration.
 To indicate which administration, we'll pass the VAT number as an argument to our query, after which we'll ask for both types of categories, 
 with their respective members. Each member will provide us with an ID that we can use in other queries, as well as a name.
 
-After we start typing a query, an argument can be used after specifying what object we want to query.
-
-The result is a JSON structure with an array of all the categories and their requested properties.
-(Please note that the result has been trimmed for brevity.)
+This example illustrates the use of inline query arguments.
 
 If you'd like to test the example above, you can use this link to the GraphQL Playground: 
 [https://graphqlbin.com](https://graphqlbin.com)

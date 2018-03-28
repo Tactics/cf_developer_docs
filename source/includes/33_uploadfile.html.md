@@ -15,7 +15,7 @@ mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTy
 {"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}
 ``` 
 
-In this example we will call a mutation with the goal of uploading a file for a specific administration.
+In this example we call a mutation with the goal of uploading a file for a specific administration.
 Just like our previous example, we will provide arguments to determine the administration, as well as the name and the type of the file.
 The uploaded file will in turn provide us with an ID, the filename and the detected amount of pages.
 
