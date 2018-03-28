@@ -27,3 +27,20 @@ content in the form, respectively called "query" and "variables".
 
 Unfortunately due to the nature of the GraphQL Playground, we can not provide you with an example, as they do not 
 allow or provide an option for a user to enter form-data or upload files.
+
+Instead we provide you with a cURL example.
+
+```curl
+curl -X POST \
+  http://api.clearfacts.be/graphql \
+  -H 'authorization: <token>' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F 'query=mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
+             uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
+               id,
+               amountOfPages
+             } 
+            }' \
+  -F 'variables={"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}' \
+  -F file=@/home/user/Documents/example.pdf
+```
