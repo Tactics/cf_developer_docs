@@ -1,4 +1,4 @@
-### Creating an associate with associate groups
+## Creating an associate with associate groups
 
 ```graphql
 query { 
