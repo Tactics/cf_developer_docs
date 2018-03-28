@@ -23,21 +23,21 @@ query categories {
       "various": [
         {
           "id": "cb29ce32-2dca-11e8-9a15-000c2985a2fd",
-          "name": "Andere"
+          "name": "Other"
         },
         {
           "id": "cb29ccf9-2dca-11e8-9a15-000c2985a2fd",
-          "name": "Kredieten"
+          "name": "Credits"
         }
       ],
       "permanent": [
         {
           "id": "cb641aea-2dca-11e8-9a15-000c2985a2fd",
-          "name": "Andere"
+          "name": "Other"
         },
         {
           "id": "cb641a7b-2dca-11e8-9a15-000c2985a2fd",
-          "name": "Financieel"
+          "name": "Financial"
         }
       ]
     }
