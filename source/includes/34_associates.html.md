@@ -20,11 +20,6 @@ query {
                 "id": "16d5379f-30cb-11e8-987b-000c2985a2fd",
                 "name": "Group 1",
                 "email": "group1@clearfacts.be"
-            },
-            {
-                "id": "16d53ea9-30cb-11e8-987b-000c2985a2fd",
-                "name": "Group 2",
-                "email": "group2@clearfacts.be"
             }
         ]
     }
