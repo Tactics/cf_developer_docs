@@ -17,6 +17,7 @@ includes:
   - 13_authentication_scopes.html.md
   - 20_graphql.html.md
   - 34_associates.html.md
+  - 35_edit_associate.html.md
 search: true
 ---
 
