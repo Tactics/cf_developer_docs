@@ -17,11 +17,16 @@ This is a list of all the supported scopes in our API:
 
 Scope                | Type   | Description
 ---------------------|--------|------------------------
-`openid`               | OpenID | This is a technical scope, it should always be requested when using the OpenID Connect flow, it also allows access to a unique identifaction of the user (the `sub` claim)
-`email`                | OpenID | Access to a users emailaddress (via the ``/userinfo`` endpoint 
+`openid`               | OpenID | This is a technical scope, it should always be requested when using the OpenID Connect flow, it also allows access to a unique identification of the user (the `sub` claim)
+`email`                | OpenID | Access to a users emailaddress (via the ``/userinfo`` endpoint)
 `profile`              | OpenID | Access to a users name, locale
 `read_administrations` | API    | Allows the client to query the list of administrations the user has access to
-`upload_document`      | API    | Allows the client to query the list of administrations the user has access to
+`upload_document`      | API    | Allows the client to upload documents and invoices for the administrations the user has access to
+`archive`              | API    | A complete archive scope that grants access to both `archive_read` and `archive_actions`
+`archive_read`         | API    | Allows the client to query the list of available archive categories
+`archive_actions`      | API    | Allows the client to upload files to a specific administration's archive category
+`associate_read`       | API    | Allows the client to query all information associated with associates and groups 
+`associate_actions`    | API    | Allows the client to modify the information of associates, as well as creating new ones
 
 Each token, be it a personal access token or a token acquired through OpenID Connect, 
 should have been granted one or more scopes for it to be of any use. 
