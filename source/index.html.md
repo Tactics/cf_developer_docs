@@ -20,6 +20,8 @@ includes:
   - 31_administrations.html.md
   - 32_categories.html.md
   - 33_uploadfile.html.md
+  - 34_associates.html.md
+  - 35_edit_associate.html.md
 
 search: true
 ---
