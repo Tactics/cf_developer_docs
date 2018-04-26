@@ -28,7 +28,8 @@ query {
 }
 ```
 
-If we wish to modify a previously created associate, at a later date, we first have to query the existing associates to find out their ID.
+In this use case we modify an existing associate.
+First, we query the existing associates to find out their ID.
 Upon executing this query in a real scenario you'll end up with a result set of all the associates for your accountant.
 For the sake of simplicity we've kept the result set for this example short and only show the one that will be of use to us.
 
@@ -66,6 +67,7 @@ mutation edit($id: ID!, $associate: EditAssociateArgument!){
 }
 ```
 
-Having queried the associates, we use the ID of the associate we want to update to create our next mutation.
-In our edit mutations, it's not a requirement to pass the complete associate object again with updated parameters.
+Use the ID of the associate in the ```editAssociate``` mutation.
+It's not required to pass the complete associate object when editing.
 Only the parameters that you provide will get updated, the others will retain their value.
+Consider it 'patching' of the associate object.

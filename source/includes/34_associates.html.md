@@ -1,7 +1,7 @@
 ## Creating an associate with associate groups
 
-```graphql
-query { 
+```graphql 
+query {
     associateGroups { 
         id, 
         name, 
@@ -10,7 +10,7 @@ query {
 }
 ```
 
-> will result in:
+> returns the following list:
 
 ```json
 {
@@ -26,11 +26,11 @@ query {
 }
 ```
 
-In this example we create an associate and assign them to an associate group. 
-The first step of the process is to look for which associate groups are available,
-and use one of their IDs to link the associate.
+In this example we create an associate and assign him to an associate group. 
+The first step of the process is to get a list available associate groups so we can
+figure out the ID of the group the associate to add to.
 
-Here we use the first group returned.
+In the example we'll use the first group returned.
 
 ```graphql
 mutation add($associate: AddAssociateArgument!) {
@@ -67,7 +67,7 @@ mutation add($associate: AddAssociateArgument!) {
 }
 ```
 
-> will result in:
+> will return the properties of the new associate together with a generated password
 
 ```json
 {
@@ -84,10 +84,19 @@ mutation add($associate: AddAssociateArgument!) {
                   "email": "group1@clearfacts.be"
                 }
             ],
-            "plainPassword": "FaKePaSsWord"
+            "plainPassword": "ZE3qa2vqizu4"
         }
     }
 }
 ```
 
-Upon completion of the query, the associate will have been created and the one-time generated password will be available for use.
+Upon completion of the query, the associate has been created and he will be able to access the system with the generated password.
+
+<aside class="warning">
+This is the only time you get access to the users password.  ClearFacts does not store passwords in there orginal format so it will not be possible to query for it later.
+We recommend not storing the password at all, but if you really need it for later use, make sure to <strong>store the password safely</strong>
+</aside>
+
+<aside class="notice">
+When an accountant has set up a SSO integration between ClearFacts and an an external identity provider, this provided password will be of no use.
+</aside>

@@ -1,16 +1,17 @@
 ## Upload a sales invoice through a mutation
 
-> query
+> The mutation:
+
 ```graphql
 mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
  uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
    id,
    amountOfPages
  } 
-}
-```
+}```
 
-> variables
+> The variables:
+
 ```json
 {"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}
 ``` 
@@ -26,11 +27,11 @@ The file must be present as a parameter named "file", while the mutation and arg
 content in the form, respectively called "query" and "variables".
 
 Unfortunately due to the nature of the GraphQL Playground, we can not provide you with an example, as they do not 
-allow or provide an option for a user to enter form-data or upload files.
+allow or provide an option for a user to enter form-data or upload files.  Instead we'll give you a cURL example you can
+use on the command line.
 
-Instead we provide you with a cURL example.
+> Uploading a file using cURL:
 
-> cURL request
 ```curl
 curl -X POST \
   http://api.clearfacts.be/graphql \

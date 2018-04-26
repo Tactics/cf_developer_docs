@@ -21,7 +21,7 @@ query admins {
   }
 }
 ```
-> will result in:
+> this will return a list of administrations:
 
 ```json
 {

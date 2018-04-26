@@ -1,8 +1,8 @@
 # Recipes
 
-In this section we will provide you with a variety of examples using 
+In this section we provide you with a variety of examples using 
 GraphQL queries and mutations. That way you'll quickly be familiar with the
-usages and use cases of our GraphQL schema and endpoint.
+usage and common use cases of our GraphQL schema and endpoint.
 
 If you'd like to run the examples, you can use the GraphQL Playground on graphqlbin.com.
 
