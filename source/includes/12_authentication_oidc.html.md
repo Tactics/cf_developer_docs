@@ -28,7 +28,7 @@ secret after your registration has been completed.
 > To get the OpenID Connect configuration:
 
 ```shell
-curl -X GET https://api.clearfacts.be/.well-known/openid-configuration
+curl -X GET https://login.clearfacts.be/.well-known/openid-configuration
 ```
 
 OIDC has a way to configure clients automatically through a Discovery Document URL.  

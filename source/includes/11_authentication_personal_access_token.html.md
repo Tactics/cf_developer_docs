@@ -33,7 +33,7 @@ If you loose your token, or believe it might have been compromised, **delete it*
 > To get information on the user of the provided token
 
 ```shell
-curl -H "Authorization: Bearer <token>" -X GET https://api.clearfacts.be/oauth2-server/userinfo
+curl -H "Authorization: Bearer <token>" -X GET https://login.clearfacts.be/oauth2-server/userinfo
 ```
 
 ```php
