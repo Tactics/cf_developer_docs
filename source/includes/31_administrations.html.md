@@ -65,6 +65,6 @@ The result is a JSON structure with an array of all the administrations and thei
 (Please note that the result has been trimmed for brevity.)
 
 If you'd like to test the example above, you can use this link to the GraphQL Playground: 
-[https://graphqlbin.com/v2/XoRjiX](https://graphqlbin.com/v2/XoRjiX)
+[https://www.graphqlbin.com/v2/XoRjiX](https://www.graphqlbin.com/v2/XoRjiX)
 
 (Don't forget to replace the `<token>` with your own token in the HTTP headers)
