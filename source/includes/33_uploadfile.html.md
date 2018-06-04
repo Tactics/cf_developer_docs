@@ -5,7 +5,7 @@
 ```graphql
 mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
  uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
-   id,
+   uuid,
    amountOfPages
  } 
 }```
