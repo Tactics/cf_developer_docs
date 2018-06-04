@@ -2,7 +2,7 @@
 
 ```graphql
 query categories {
-  archiveCategories(vatnumber: "0123123123") {
+  archiveCategories(vatnumber: "0123456789") {
     various {
       id,
       name  
@@ -54,4 +54,4 @@ with their respective members.
 Each member has an ID you can use to upload a file to the archive using the uploadArchiveFile mutation. 
 
 If you'd like to test the example above, you can use this link to the GraphQL Playground: 
-[https://graphqlbin.com](https://graphqlbin.com)
+[https://www.graphqlbin.com/v2/7L28TQ](https://www.graphqlbin.com/v2/7L28TQ)
