@@ -34,9 +34,8 @@ use on the command line.
 
 ```curl
 curl -X POST \
-  http://api.clearfacts.be/graphql \
+  https://api.clearfacts.be/graphql \
   -H 'authorization: <token>' \
-  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
   -F 'query=mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
              uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
                uuid,
