@@ -30,7 +30,6 @@ secret after your registration has been completed.
 ```shell
 curl -X GET https://login.clearfacts.be/.well-known/openid-configuration
 ```
-
 OIDC has a way to configure clients automatically through a Discovery Document URL.  
 The URL for this is defined by the OIDC spec and can be inspected manually 
 if you'd like to see which features are supported in our implementation.
@@ -51,6 +50,11 @@ if you'd like to see which features are supported in our implementation.
 
 [https://login.clearfacts.be/.well-known/openid-configuration](https://login.clearfacts.be/.well-known/openid-configuration)
 
+<aside class="notice">
+Note that the login.clearfacts.be is our generic OpenID Connect Endpoint for all our customers.  If you are implementing a flow for a single accountant you can replace login.clearfacts.be with the accountants specific domain. (eg acme.clearfacts.be, or a white label domain)  This will ensure that the user sees his familiar login screen with the accountants logo instead of a 'login with ClearFacts' image.  Only users know with this account will be allowed access.<br/>
+
+Example: https://acme.clearfacts.be/.well-known/openid-configuration
+</aside>
 
 ### Authorisation code flow
 
