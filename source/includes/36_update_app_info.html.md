@@ -46,3 +46,6 @@ mutation UpdateAppInfo
 ```
 
 You can create or update customization for the app connected to your client id. If you want an app connected to your client id, please contact support@clearfacts.be.
+
+If you'd like to test the example above, you can use this link to the GraphQL Playground: 
+[https://graphqlbin.com/v2/3QjzFm](https://graphqlbin.com/v2/3QjzFm)
