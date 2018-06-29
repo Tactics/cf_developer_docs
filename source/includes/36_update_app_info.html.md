@@ -18,7 +18,7 @@ mutation UpdateAppInfo
     "badgeText": "NEW", 
     "badgeTextColor": "#d5a855", 
     "badgeColor": "red", 
-    "iconType": "award", 
+    "iconType": "trophy", 
     "iconColor":"yellow"}
 ```
 
@@ -32,7 +32,7 @@ mutation UpdateAppInfo
             "imageUrl" : "XXX",
             "emailaddress": "test@clearfacts.be",
             "icon": {
-                "type": "award",
+                "type": "trophy",
                 "color": "yellow"
             },
             "badge": {
@@ -44,3 +44,5 @@ mutation UpdateAppInfo
     }
 }
 ```
+
+You can create or update customization for the app connected to your client id. If you want an app connected to your client id, please contact support@clearfacts.be.
