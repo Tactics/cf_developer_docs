@@ -85,7 +85,7 @@ The token that you'll receive using OIDC is not a random byte string, but a sign
 The JWT token contains the basic claims (sub, username, email) as well as the
 80 character access token like you would get when creating a personal access token.
 
-Both the longer JWT token and the 80 character token can be used in the `Authentication: Bearer <token>` header.  
+Both the longer JWT token and the 80 character token can be used in the `Authorization: Bearer <token>` header.  
 This means you can store either one depending on your use case.
 
 
