@@ -35,19 +35,19 @@ This example queries the statistics of AIR usage.
 
 The getCompanyStatistics supports multiple types, each will have a set of usable parameters.
 
-Types:
-   - AIR:
-        - startPeriod
-        - endPeriod
-        - companyNumber     
-   - processing:
-        - startPeriod
-        - endPeriod
-        - companyNumber
-        - invoiceType
-        - worklist
+#####Types:
+- AIR:
+    * startPeriod
+    * endPeriod
+    * companyNumber
+- Processing:
+    * startPeriod
+    * endPeriod
+    * companyNumber
+    * invoiceType
+    * worklist
 
-Parameters:
+#####Parameters:
 - startPeriod: An RFC-3339 encoded date string. This field is required.
 - endPeriod: An RFC-3339 encoded date string. This field is required.
 - companyNumber: Company number of the administration whose statistics you want to query. This field is optional. (e.g. BE0123456789)
