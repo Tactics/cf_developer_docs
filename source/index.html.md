@@ -22,6 +22,9 @@ includes:
   - 33_uploadfile.html.md
   - 34_associates.html.md
   - 35_edit_associate.html.md
+  - 36_update_app_info.html.md
+  - 37_get_company_statistics.html.md
+  - 38_document.html.md
 
 search: true
 ---
