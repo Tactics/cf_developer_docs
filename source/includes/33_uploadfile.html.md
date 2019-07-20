@@ -8,12 +8,17 @@ mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTy
    uuid,
    amountOfPages
  } 
-}```
+}
+```
 
 > The variables:
 
 ```json
-{"variables": { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}}
+{
+  "vatnumber": "0123123123", 
+  "filename": "test_upload.pdf", 
+  "invoicetype": "SALE"
+}
 ``` 
 
 In this example we call a mutation with the goal of uploading a file for a specific administration.
@@ -37,11 +42,11 @@ curl -X POST \
   https://api.clearfacts.be/graphql \
   -H 'authorization: <token>' \
   -F 'query=mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
-             uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
-               uuid,
-               amountOfPages
-             } 
-            }' \
-  -F 'variables= { "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}' \
+  uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
+      uuid,
+      amountOfPages
+    } 
+  }' \
+  -F 'variables={ "vatnumber": "0123123123", "filename": "test_upload.pdf", "invoicetype": "SALE"}' \
   -F file=@/home/user/Documents/example.pdf
 ```
