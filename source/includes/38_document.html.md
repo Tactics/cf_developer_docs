@@ -2,15 +2,24 @@
 
 ```graphql
 query doc {
-  document(id: "6bf58d1c-0952-44bd-8d95-1dd0307fad25") {
-	date, 
-	... on InvoiceDocument {
-	  type, 
-	  paymentState
+  document(id: $documentId) {
+    date, 
+    ... on InvoiceDocument {
+      type, 
+      paymentState
     }
   }
 }
 ```
+
+> The variables:
+
+```json
+{
+  "documentId": "6bf58d1c-0952-44bd-8d95-1dd0307fad25", 
+}
+``` 
+
 > this will return details of the document:
 
 ```json
