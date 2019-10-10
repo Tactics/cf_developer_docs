@@ -40,7 +40,7 @@ use on the command line.
 ```curl
 curl -X POST \
   https://api.clearfacts.be/graphql \
-  -H 'authorization: <token>' \
+  -H 'Authorization: Bearer <token>' \
   -F 'query=mutation upload($vatnumber: String!, $filename: String!, $invoicetype: InvoiceTypeArgument!) {
   uploadFile(vatnumber: $vatnumber, filename: $filename, invoicetype: $invoicetype) { 
       uuid,
