@@ -2,7 +2,7 @@
 
 ```graphql
 query statistics {
-  getCompanyStatistics(type: "AIR", startPeriod: "2015-01-18", endPeriod: "2018-07-18") {
+  getCompanyStatistics(type: $type, startPeriod: $startPeriod, endPeriod: $endPeriod) {
     companyNumber
     items {
       period
@@ -11,6 +11,17 @@ query statistics {
   }
 }
 ```
+
+> The variables:
+
+```json
+{ 
+  "type": "AIR",
+  "startPeriod": "2015-01-18", 
+  "endPeriod": "2018-07-18"
+}
+```
+
 > this will fetch the statistics of AIR usage:
 
 ```json

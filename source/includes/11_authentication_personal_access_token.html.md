@@ -24,7 +24,7 @@ To create a personal access token, you need to follow these steps:
 
 <aside class="warning">
 Tokens are like passwords, make sure to treat them in the same way and keep them safe.
-If you loose your token, or believe it might have been compromised, **delete it** and create a new one.
+If you lose your token, or believe it might have been compromised, **delete it** and create a new one.
 </aside>
 
 
