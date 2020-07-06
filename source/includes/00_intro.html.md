@@ -1,7 +1,7 @@
 # Introduction
 
 <aside class="notice">
-This documentation is still a work progress.
+We have written this documentation with great care.
 Please do not hesitate to contact us if things are unclear, undocumented or even plain wrong.
 Your input helps us making things better for the next developer stopping by.
 </aside>
