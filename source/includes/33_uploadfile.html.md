@@ -35,6 +35,14 @@ Unfortunately due to the nature of the GraphQL Playground, we can not provide yo
 allow or provide an option for a user to enter form-data or upload files.  Instead we'll give you a cURL example you can
 use on the command line.
 
+<aside class="notice">
+Supported file types are PDF's (application/pdf MIME type), images (image/jpeg) and UBL-files ('application/xml').
+  
+UBL-files must meet the the Billing3 standard (https://docs.peppol.eu/poacc/billing/3.0/) or the Belgian variant UBL.BE (https://www.ubl.be).
+
+Additionally, we still support the legacy E-FFF format.
+</aside>
+
 > Uploading a file using cURL:
 
 ```curl
