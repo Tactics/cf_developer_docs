@@ -37,9 +37,7 @@ use on the command line.
 
 <aside class="notice">
 Supported file types are PDF's (application/pdf MIME type), images (image/jpeg) and UBL-files ('application/xml').<br/>
-<br/>  
-UBL-files must meet the the <a href="https://docs.peppol.eu/poacc/billing/3.0/">Billing3 standard</a> or the Belgian variant <a href="https://www.ubl.be">UBL.BE</a>.<br/>
-<br/>
+UBL-files must meet the the <a href="https://docs.peppol.eu/poacc/billing/3.0/" target="_blank">Billing3 standard</a> or the Belgian variant <a href="https://www.ubl.be" target="_blank">UBL.BE</a>.<br/>
 Additionally, we still support the legacy E-FFF format.
 </aside>
 
