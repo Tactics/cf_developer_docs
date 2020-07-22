@@ -89,9 +89,8 @@ Both the longer JWT token and the 80 character token can be used in the `Authori
 This means you can store either one depending on your use case.
 
 ### Creating multiple tokens
-You can create multiple tokens for a user/client identifier/scope combination to create tokens for specific use cases.
+You can create multiple tokens for a user/client_identifier combination.
 
 This is useful if your applications supports one workflow for sign-in and only requires basic user information. Another use case may require access to a user's archive. Using multiple tokens, your application can perform the authorization flow for each use case, requesting only the scopes needed.
 
-The number of tokens that can be issued per user/client identifier/scope combination is limited to 10. If your application requests enough tokens to go over one of the limits, least recently used tokens with the same scope being requested will stop working.
-
+Additionally, you can create multiple tokens per unique user/client_identifier/requested_scopes combination, but the number of active tokens is limited to 10. If your application requests enough tokens to go over the limit, least recently used tokens with the same scopes being requested will stop working.
