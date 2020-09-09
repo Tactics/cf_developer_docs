@@ -28,7 +28,7 @@ Scope                | Type   | Description
 `associate_read`       | API    | Allows the client to query all information associated with associates and groups 
 `associate_actions`    | API    | Allows the client to modify the information of associates, as well as creating new ones
 `statistics`           | API    | Allows the client to query office statistics
-`read_contacts`        | API    | Allows the client to query customers for the administration
+`contact_read`        | API    | Allows the client to query customers for the administration
 
 Each token, be it a personal access token or a token acquired through OpenID Connect, 
 should have been granted one or more scopes for it to be of any use. 
